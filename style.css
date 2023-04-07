@@ -1,0 +1,142 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-image: url("bmi.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+/* Alarm clock div styles */
+
+main {
+  min-width: 20rem;
+  width: 50vw;
+  background-color: transparent;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+main h1 {
+  color: rgb(190, 12, 116);
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 2px 3px black;
+}
+
+.timer {
+  color: rgb(10, 1, 1);
+  text-align: center;
+  padding: 20px;
+  font-size: 2.5rem;
+}
+
+/* setting up the form designs */
+form .input-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+form input,
+form select {
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 3px rgb(131, 118, 118);
+  margin-bottom: 30px;
+  color: #d3157e;
+}
+
+form .button-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+form button {
+  padding: 0.2rem;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  background-color: #0ff00f;
+  box-shadow: 0 0 3px 3px rgba(152, 173, 230, 0.685);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #0e0d0d;
+  border: none;
+  border-radius: 5px;
+}
+
+#stop {
+  opacity: 0.8;
+  cursor: not-allowed;
+  background-color: #ff0000;
+  color:rgb(24, 4, 4);
+}
+
+form button:hover {
+  transform: scale(1.2);
+}
+
+/* setting up alarm container designs */
+.container {
+  width: 300px;
+  margin: auto;
+  margin-top: 20px;
+  background-color:  rgb(253 169 0);
+  border-radius: 20px;
+  padding: 20px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.container .alarm {
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid white;
+  padding: 6px;
+  border-radius: 20px;
+  box-shadow: 0 0 3px 2px white;
+}
+
+.alarm ion-icon {
+  font-size: 1.7rem;
+  color: white;
+}
+
+.alarm span {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.alarm button {
+  background-color: #00cc00;
+  box-shadow: 0 0 2px 2px white;
+  color: white;
+  padding: 5px;
+  font-size: 1.2rem;
+  border: 2px solid white;
+  cursor: pointer;
+}
